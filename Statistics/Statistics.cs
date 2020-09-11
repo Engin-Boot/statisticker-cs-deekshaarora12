@@ -7,9 +7,9 @@ namespace Statistics
     public class StatsComputer
     {
            
-               public double average;
-               public double max;
-               public double min;
+            public double average;
+            public double max;
+            public double min;
             
         
         public StatsComputer CalculateStatistics(List<double> numbers) {
