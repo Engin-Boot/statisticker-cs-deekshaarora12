@@ -14,10 +14,11 @@ namespace Statistics
         };
         
         public mystats CalculateStatistics(List<double> numbers) {
+            
            mystats mystatsobj;
-           /*mystatsobj.average = Double.NaN;
+           mystatsobj.average = Double.NaN;
            mystatsobj.max = Double.NaN;
-           mystatsobj.min = Double.NaN;*/
+           mystatsobj.min = Double.NaN;
             
            double myavg = Queryable.Average(numbers.AsQueryable());
            double mymax = numbers.Max();
