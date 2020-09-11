@@ -12,7 +12,7 @@ namespace Statistics
                public double min;
             
         
-        public mystats CalculateStatistics(List<double> numbers) {
+        public StatsComputer CalculateStatistics(List<double> numbers) {
            
            StatsComputer mystatsobj;
             
