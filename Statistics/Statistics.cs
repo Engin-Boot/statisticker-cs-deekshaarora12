@@ -11,9 +11,9 @@ namespace Statistics
                public double average;
                public double max;
                public double min;
-        } 
+        };
         
-        public struct CalculateStatistics(List<double> numbers) {
+        public mystats CalculateStatistics(List<double> numbers) {
            mystats mystatsobj;
            /*mystatsobj.average = Double.NaN;
            mystatsobj.max = Double.NaN;
