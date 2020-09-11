@@ -20,7 +20,7 @@ namespace Statistics
            mystatsobj.max = Double.NaN;
            mystatsobj.min = Double.NaN;
             
-          double? myavg = numbers.Average();
+           double myavg = numbers.Average();
            double mymax = numbers.Max();
            double mymin = numbers.Min();
            
