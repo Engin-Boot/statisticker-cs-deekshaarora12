@@ -6,7 +6,7 @@ namespace Statistics
 {
     public class StatsComputer
     {
-        public struct mysats
+        public struct mystats
            {
                public double average;
                public double max;
