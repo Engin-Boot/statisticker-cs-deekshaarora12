@@ -11,11 +11,10 @@ namespace Statistics
                public double average;
                public double max;
                public double min;
-        };
+           };  mystats mystatsobj;
         
         public mystats CalculateStatistics(List<double> numbers) {
             
-           mystats mystatsobj;
            mystatsobj.average = Double.NaN;
            mystatsobj.max = Double.NaN;
            mystatsobj.min = Double.NaN;
