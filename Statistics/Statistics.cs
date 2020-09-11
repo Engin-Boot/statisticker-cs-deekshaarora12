@@ -7,24 +7,24 @@ namespace Statistics
     public class StatsComputer
     {
            
-            public float average;
-            public float max;
-            public float min;
+            public double average;
+            public double max;
+            public double min;
             
         
-        public StatsComputer CalculateStatistics(List<float> numbers) {
+        public StatsComputer CalculateStatistics(List<double> numbers) {
            
            StatsComputer mystatsobj = new StatsComputer();
             
-           mystatsobj.average = Single.NaN;
-           mystatsobj.max = Single.NaN;
-           mystatsobj.min = Single.NaN;
+           mystatsobj.average = Double.NaN;
+           mystatsobj.max = Double.NaN;
+           mystatsobj.min = Double.NaN;
             
           if(numbers.Any())
             {
-           float myavg = numbers.Average();
-           float mymax = numbers.Max();
-           float mymin = numbers.Min();
+           double myavg = numbers.Average();
+           double mymax = numbers.Max();
+           double mymin = numbers.Min();
            
             mystatsobj.average = myavg;
             mystatsobj.max = mymax;
