@@ -7,12 +7,12 @@ namespace Statistics
     public class StatsComputer
     {
            
-            public double average;
-            public double max;
-            public double min;
+            public float average;
+            public float max;
+            public float min;
             
         
-        public StatsComputer CalculateStatistics(List<double> numbers) {
+        public StatsComputer CalculateStatistics(List<float> numbers) {
            
            StatsComputer mystatsobj = new StatsComputer();
             
@@ -22,9 +22,9 @@ namespace Statistics
             
           if(numbers.Any())
             {
-           double myavg = numbers.Average();
-           double mymax = numbers.Max();
-           double mymin = numbers.Min();
+           float myavg = numbers.Average();
+           float mymax = numbers.Max();
+           float mymin = numbers.Min();
            
             mystatsobj.average = myavg;
             mystatsobj.max = mymax;
