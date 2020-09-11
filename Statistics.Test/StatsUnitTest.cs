@@ -19,6 +19,7 @@ namespace Statistics.Test
             Assert.True(Math.Abs(statsComputer.max - 8.9) <= epsilon);
             Assert.True(Math.Abs(statsComputer.min - 1.5) <= epsilon);
         }
+        [Fact]
         public void ReportsNaNForEmptyInput()
         {
             var statsComputer = new StatsComputer();
