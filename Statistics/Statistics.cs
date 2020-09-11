@@ -11,14 +11,13 @@ namespace Statistics
                public double average;
                public double max;
                public double min;
-           }
-           
+        } 
+        
+        public struct CalculateStatistics(List<double> numbers) {
            mystats mystatsobj;
            mystatsobj.average = Double.NaN;
            mystatsobj.max = Double.NaN;
            mystatsobj.min = Double.NaN;
-        
-        public struct CalculateStatistics(List<double> numbers) {
             
            double myavg = Queryable.Average(numbers.AsQueryable());
            double mymax = numbers.Max();
