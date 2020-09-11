@@ -16,9 +16,9 @@ namespace Statistics
            
            StatsComputer mystatsobj = new StatsComputer();
             
-           mystatsobj.average = Single.NaN;
-           mystatsobj.max = Single.NaN;
-           mystatsobj.min = Single.NaN;
+           mystatsobj.average = Float.NaN;
+           mystatsobj.max = Float.NaN;
+           mystatsobj.min = Float.NaN;
             
           if(numbers.Any())
             {
