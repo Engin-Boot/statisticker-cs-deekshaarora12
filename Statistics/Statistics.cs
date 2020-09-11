@@ -6,14 +6,15 @@ namespace Statistics
 {
     public class StatsComputer
     {
-        public struct mystats
-           {
+           
                public double average;
                public double max;
                public double min;
-           };  mystats mystatsobj;
+            
         
         public mystats CalculateStatistics(List<double> numbers) {
+           
+           StatsComputer mystatsobj;
             
            mystatsobj.average = Double.NaN;
            mystatsobj.max = Double.NaN;
