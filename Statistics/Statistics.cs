@@ -5,12 +5,12 @@ namespace Statistics
 {
     public class StatsComputer
     {
-        public Stats CalculateStatistics(List<double> numbers) {
-           struct mysats
+        public struct CalculateStatistics(List<double> numbers) {
+           public struct mysats
            {
-               double average;
-               double max;
-               double min;
+               public double average;
+               public double max;
+               public double min;
            }
            
            mystats mystatsobj;
