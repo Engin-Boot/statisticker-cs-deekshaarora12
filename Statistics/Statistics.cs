@@ -14,7 +14,7 @@ namespace Statistics
         
         public StatsComputer CalculateStatistics(List<double> numbers) {
            
-           StatsComputer mystatsobj;
+           StatsComputer mystatsobj = new StatsComputer();
             
            mystatsobj.average = Double.NaN;
            mystatsobj.max = Double.NaN;
