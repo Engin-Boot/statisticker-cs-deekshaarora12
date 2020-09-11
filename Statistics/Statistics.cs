@@ -18,13 +18,13 @@ namespace Statistics
            mystatsobj.max = Double.NaN;
            mystatsobj.min = Double.NaN;
             
-           double my_avg = Queryable.Average(numbers.AsQueryable());
-           double my_max = numbers.Max();
-           double my_min = numbers.Min();
+           double myavg = Queryable.Average(numbers.AsQueryable());
+           double mymax = numbers.Max();
+           double mymin = numbers.Min();
            
-            mystatsobj.average = my_avg;
-            mystatsobj.max = my_max;
-            mystatsobj.min = my_min;
+            mystatsobj.average = myavg;
+            mystatsobj.max = mymax;
+            mystatsobj.min = mymin;
             
             return mystatsobj;
            
