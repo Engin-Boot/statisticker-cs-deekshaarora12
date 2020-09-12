@@ -27,10 +27,12 @@ namespace Statistics
             mystatsobj.min = mymin;
           }
             
-          
+          else
+          {
            mystatsobj.average = float.NaN;
            mystatsobj.max = float.NaN;
-           mystatsobj.min = float.NaN;    
+           mystatsobj.min = float.NaN;   
+          }
             
             return mystatsobj;
            
