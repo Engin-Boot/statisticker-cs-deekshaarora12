@@ -12,8 +12,7 @@ namespace Statistics.Test
         public void ReportsAverageMinMax()
         {
             var statsComputer = new StatsComputer();
-            var computedStats = statsComputer.CalculateStatistics(
-                new List<float>(1.5, 8.9, 3.2, 4.5));
+            var computedStats = statsComputer.CalculateStatistics(new List<float>{1.5, 8.9, 3.2, 4.5});
             float epsilon = 0.001F;
             Assert.True(Math.Abs(statsComputer.average - 4.525) <= epsilon);
             Assert.True(Math.Abs(statsComputer.max - 8.9) <= epsilon);
@@ -23,7 +22,7 @@ namespace Statistics.Test
         public void ReportsNaNForEmptyInput()
         {
             var statsComputer = new StatsComputer();
-            var computedStats = statsComputer.CalculateStatistics(new List<float>());
+            var computedStats = statsComputer.CalculateStatistics(new List<float>{});
             
             Assert.True((statsComputer.average) == float.NaN);
             Assert.True((statsComputer.max) == float.NaN);
