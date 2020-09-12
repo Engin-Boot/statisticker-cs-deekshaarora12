@@ -16,7 +16,7 @@ namespace Statistics
            
            StatsComputer mystatsobj = new StatsComputer();
             
-          if(numbers.Count!=0)
+          if(numbers.Any())
             {
            float myavg = numbers.Average();
            float mymax = numbers.Max();
@@ -27,13 +27,10 @@ namespace Statistics
             mystatsobj.min = mymin;
           }
             
-           else
-            {
-               
+          
            mystatsobj.average = float.NaN;
            mystatsobj.max = float.NaN;
            mystatsobj.min = float.NaN;    
-            }
             
             return mystatsobj;
            
