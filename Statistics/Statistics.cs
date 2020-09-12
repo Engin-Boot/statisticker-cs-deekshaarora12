@@ -38,9 +38,5 @@ namespace Statistics
             return mystatsobj;
            
         }
-       static void Main(string[] args)
-       {
-          
-       }
     }
 }
