@@ -5,7 +5,7 @@ using System.Linq;
 namespace Statistics
 {
     public class StatsComputer
-    {
+     {
            
             public float average;
             public float max;
