@@ -16,10 +16,6 @@ namespace Statistics
            
            StatsComputer mystatsobj = new StatsComputer();
             
-           mystatsobj.average = Double.NaN;
-           mystatsobj.max = Double.NaN;
-           mystatsobj.min = Double.NaN;
-            
           if(numbers.Count!=0)
             {
            double myavg = numbers.Average();
@@ -30,6 +26,14 @@ namespace Statistics
             mystatsobj.max = mymax;
             mystatsobj.min = mymin;
           }
+            
+           else
+            {
+               
+           mystatsobj.average = Double.NaN;
+           mystatsobj.max = Double.NaN;
+           mystatsobj.min = Double.NaN;    
+            }
             
             return mystatsobj;
            
